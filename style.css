@@ -115,3 +115,28 @@ header nav ul div {
 .banner-section .banner-text .download-icon i {
     transform: rotate(90deg);
 }
+.banner-section .banner-img img {
+    padding-top: 25px;
+    width: 100%;
+}
+
+/* GAMER SECTION START  */
+.gamer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.gamer-section .gamer-text {
+    text-align: end;
+}
+.gamer-section .gamer-text p {
+    padding-top: 20px;
+}
+.gamer-section .gamer-text button {
+    margin-top: 20px;
+}
+.gamer-section .gamer-text h4 {
+    font-size: 24px;
+    color: #534c64;
+}
