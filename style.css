@@ -10,10 +10,38 @@ body {
     max-width: 1320px;
     margin: 0 auto;
 }
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+.section-highlight {
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .text-primary {
     color: #ff42a5;
 }
-
+.fs-primary {
+    font-size: 18px;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #f948b2;
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: 0;
+}
+.btn-secondary {
+    color: #ffffff;
+    background-color: #4ec5f7;
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: 0;
+}
 /* HEADER SECTION START  */
 header {
     padding: 30px 0px;
@@ -51,4 +79,39 @@ header nav ul div {
     background-color: #e7e6e9;
     padding: 10px 20px 10px 0;
     border-radius: 5px;
+}
+
+/* BANNER SECTION START  */
+.banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner {
+    background-image: url("./asset/images/group14.png");
+    background-position: start;
+    background-repeat: no-repeat;
+}
+.banner-section .banner-text h2 {
+    text-transform: uppercase;
+}
+.banner-section .banner-text h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+}
+.banner-section .banner-button {
+    padding-top: 25px;
+}
+.banner-section .banner-text p {
+    margin: 5px 0px;
+}
+.banner-section .banner-button button:nth-child(2) {
+    margin-left: 15px;
+}
+.banner-section .banner-text i {
+    color: #f948b2;
+}
+.banner-section .banner-text .download-icon i {
+    transform: rotate(90deg);
 }
