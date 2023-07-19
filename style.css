@@ -5,3 +5,50 @@
 body {
     font-family: "Work Sans", sans-serif;
 }
+/* COMMON STYLE  */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.text-primary {
+    color: #ff42a5;
+}
+
+/* HEADER SECTION START  */
+header {
+    padding: 30px 0px;
+    border-bottom: 1px solid saddlebrown;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo {
+    display: flex;
+    align-items: center;
+}
+header nav .logo h1 {
+    font-size: 45px;
+    padding-left: 20px;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul a {
+    margin: 20px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+header nav ul div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #e7e6e9;
+    padding: 10px 20px 10px 0;
+    border-radius: 5px;
+}
