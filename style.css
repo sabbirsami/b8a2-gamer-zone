@@ -188,3 +188,22 @@ header nav ul div {
 .videos-section .video img:hover .img-hover {
     opacity: 1;
 }
+
+/* PLAY SECTION START  */
+.play-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.play-section .play-text {
+    text-align: end;
+    padding: 100px;
+}
+.play-section .play-text p {
+    padding: 20px 0;
+}
+.play-section .play-img-2 {
+    margin-top: -280px;
+    margin-left: -130px;
+}
