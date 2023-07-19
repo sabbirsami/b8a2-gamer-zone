@@ -166,32 +166,33 @@ header nav ul div {
     padding: 15px 0px 15px 5px;
     text-align: left;
 }
-.videos-section .videos img {
-    width: 100%;
+.videos-section .videos .video img {
     border-radius: 16px;
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
+    width: 100%;
 }
-.videos-section .img-hover {
-    transition: 0.5s ease;
-    opacity: 0;
+.videos-section .videos .video {
+    position: relative;
+}
+.videos-section .videos .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #f948b2;
+    color: #ffffff;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
-.videos-section .video img:hover {
-    opacity: 0.3;
-}
-.videos-section .video img:hover .img-hover {
+.videos-section .videos .video .overlay:hover {
     opacity: 1;
 }
-
 /* PLAY SECTION START  */
 .play-section {
     display: flex;
