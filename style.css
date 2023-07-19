@@ -6,6 +6,9 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 /* COMMON STYLE  */
+.hide {
+    display: none;
+}
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -229,15 +232,16 @@ header nav ul div {
     padding: 60px 0;
 }
 .games-section .games {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .games-section .games .game {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
     padding: 15px;
     margin: 20px;
     border: 1px solid #ffffff;
@@ -298,4 +302,98 @@ footer .link {
 footer .copyright {
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
+}
+
+/* MEDIA QUARRY  */
+@media screen and (max-width: 576px) {
+    /* header section  */
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        padding: 10px 0;
+    }
+    /* banner section  */
+    .banner-section {
+        flex-direction: column;
+    }
+    .banner-section .banner-text {
+        padding: 35px 20px;
+    }
+    .banner-section .banner-text h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    /* GAMER SECTION */
+    .gamer-section {
+        flex-direction: column;
+    }
+    .gamer-section img {
+        width: 100%;
+    }
+    .gamer-section .gamer-text {
+        text-align: center;
+    }
+    /* VIDEO SECTION */
+    .videos-section {
+        padding: 40px 25px;
+    }
+    .videos-section .videos {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 25px;
+    }
+    .videos-section .videos p {
+        text-align: center;
+    }
+    /* PLAY SECTION */
+    .play-section {
+        flex-direction: column;
+    }
+    .play-section .play-text {
+        text-align: center;
+        padding: 10px;
+    }
+    .play-section .play-img > img {
+        width: 70%;
+        padding: 0px 70px;
+    }
+    .play-section .play-img .mini-img {
+        width: 30%;
+        padding: 60px;
+        margin-left: 80px;
+        margin-top: 70px;
+    }
+
+    /* GAME SECTION  */
+    .games-section {
+        padding: 0;
+    }
+    .games-section .games {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .games-section .games .game {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px;
+        margin: 5px;
+        border: 1px solid #ffffff;
+    }
+    /* FOOTER SECTION  */
+    footer nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    footer .link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 25px;
+    }
 }
