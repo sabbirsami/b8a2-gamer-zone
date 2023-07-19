@@ -42,6 +42,9 @@ body {
     text-transform: uppercase;
     border: 0;
 }
+.text-center {
+    text-align: center;
+}
 /* HEADER SECTION START  */
 header {
     padding: 30px 0px;
@@ -139,4 +142,49 @@ header nav ul div {
 .gamer-section .gamer-text h4 {
     font-size: 24px;
     color: #534c64;
+}
+
+/* VIDEO SECTION START  */
+.videos-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.videos-section .videos-text {
+    padding-bottom: 45px;
+}
+.videos-section .videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    gap: 15px;
+    justify-content: space-between;
+}
+.videos-section .videos p {
+    padding: 15px 0px 15px 5px;
+    text-align: left;
+}
+.videos-section .videos img {
+    width: 100%;
+    border-radius: 16px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+.videos-section .img-hover {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.videos-section .video img:hover {
+    opacity: 0.3;
+}
+.videos-section .video img:hover .img-hover {
+    opacity: 1;
 }
